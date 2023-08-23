@@ -14,6 +14,8 @@
 -   [x] Bubble Sort
 -   [x] Insertion Sort
 -   [x] Selection Sort
+-   [x] Quick Sort
+-   [x] DistributionCounting Sort
 
 ---
 
