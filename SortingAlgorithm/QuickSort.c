@@ -25,6 +25,7 @@ int partition(int arr[], int left, int right)
     }
     swap(&arr[i], &arr[j]);
     swap(&arr[left], &arr[j]);
+
     return j;
 }
 
@@ -41,14 +42,18 @@ int quickSort(int arr[], int left, int right)
     return 1;
 }
 
+void printArray(int arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+        printf("%d ", arr[i]);
+}
+
 int main()
 {
     int arr[10] = {3, 4, 2, 8, 6, -9, 7, 5, -5, 0};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
     quickSort(arr, 0, 10 - 1);
 
-    for (int i = 0; i < 10; i++)
-    {
-        printf("%d ", arr[i]);
-    }
+    printArray(arr, n);
 }
