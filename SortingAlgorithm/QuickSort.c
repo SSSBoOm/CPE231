@@ -13,7 +13,7 @@ int partition(int arr[], int left, int right)
     int i = left + 1;
     int j = right;
 
-    while (i < j)
+    while (i <= j)
     {
         while (arr[i] < p)
             i++;
